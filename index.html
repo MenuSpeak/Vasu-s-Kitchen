@@ -565,11 +565,6 @@
                 <button class="tab" data-cat="THALI">🍱 Thali Special</button>
                 <button class="tab" data-cat="SABJI">🥗 Veg Menu</button>
                 <button class="tab" data-cat="RICE">🍚 Rice & Biryani Veg</button>  
-                <button class="tab" data-cat="RICE & BIRYANI">🍚 Rice & Biryani</button>
-                <button class="tab" data-cat="CURRY">🥘 Curry</button>
-                <button class="tab" data-cat="FRY">🍗 Fry</button>
-                <button class="tab" data-cat="TANDOOR">🔥 Tandoor</button>
-                <button class="tab" data-cat="FISH">🐟 Fish</button>
             </div>
 
             <section class="menu-grid" id="menuGrid">
@@ -697,6 +692,10 @@
 {"id": 59, "cat": "RICE", "name": "Pulao / Masale Bhat | पुलाव / मसाले भात", "price": "950/- kg", "desc": "Traditional aromatic masale bhat", "tags": ["Veg", "Rice", "Traditional"], "img": "img/masale_bhat.jpeg"},
 {"id": 60, "cat": "RICE", "name": "Paneer Tawa Pulao | पनीर तवा पुलाव", "price": "1100/- kg", "desc": "Spicy tawa pulao with paneer chunks", "tags": ["Veg", "Rice", "Paneer"], "img": "img/paneer_tawa_pulao.jpeg"},               
 
+        ];
+
+        let cart = [
+
   {"id":61, "cat":"RICE & BIRYANI", "name":"आळणी भात / Aalani Bhat", "desc":"Flavorful mild chicken stock rice", "img":"img/aalani_bhat.jpeg"},
   {"id":62, "cat":"RICE & BIRYANI", "name":"चिकन हैदराबादी बिर्याणी (पोर्शन) / Chicken Hyderabadi Biryani (Portion)", "desc":"Authentic Hyderabadi chicken biryani", "img":"img/chicken_hyderabadi_biryani_portion.jpeg"},
   {"id":63, "cat":"RICE & BIRYANI", "name":"चिकन हैदराबादी बिर्याणी (१/२ किलो) / Chicken Hyderabadi Biryani (Half Kg)", "desc":"Half Kg chicken + Half Kg Rice", "img":"img/chicken_hyderabadi_biryani_half_kg.jpeg"},
@@ -728,22 +727,11 @@
   {"id":89, "cat":"FISH", "name":"प्रॉन्स फ्राय / Prawns Fry", "desc":"Spiced pan fried prawns", "img":"img/prawns_fry.jpeg"},
   {"id":90, "cat":"FISH", "name":"प्रॉन्स कोळीवाडा / Prawns Koliwada", "desc":"Spicy deep fried prawns", "img":"img/prawns_koliwada.jpeg"},
   {"id":91, "cat":"FISH", "name":"बोंबील फ्राय / Bombil Fry", "desc":"Crispy fried Bombay duck", "img":"img/bombil_fry.jpeg"},
-  {"id":92, "cat":"FISH", "name":"बांगडा फ्राय / Bangada Fry", "desc":"Spiced pan fried mackerel", "img":"img/bangada_fry.jpeg"},
-
-
-              
-            
-
-
-              
-
-
-              
+  {"id":92, "cat":"FISH", "name":"बांगडा फ्राय / Bangada Fry", "desc":"Spiced pan fried mackerel", "img":"img/bangada_fry.jpeg"},          
         ];
-
-        let cart = [];
         let currentDietFilter = "veg";   // 'veg' or 'nonveg'
         let currentCategory = "all";
+          
         let searchQuery = "";
 
         // Helper: filter items based on diet + category + search
